@@ -108,34 +108,49 @@
     margin: 5px;
 }
 
+.carsss {
+    display: none;
+    margin: 10px auto;
+    border: 5px solid goldenrod;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 25rem;
+    box-shadow: inset 0 0 8px 8px goldenrod;
 
-@keyframes slide {
+    /* animation: carslide 5s ease-out; */
+    /* animation: carslideout 5s ease-out; */
+}
+
+.carsss span {
+    color: goldenrod;
+}
+
+@keyframes carslide {
 
     0% {
-        transform: translateX(-1000px);
         opacity: 0.2;
     }
 
     50% {
-        transform: translateX(30px);
         opacity: 0.8;
     }
 
     100% {
-        transform: translateX(0px);
         opacity: 1;
     }
 }
 
-@keyframes slideout {
+@keyframes carslideout {
 
     0% {
-        transform: translateX(0px);
         opacity: 1;
     }
 
+    50% {
+        opacity: 0.8;
+    }
+
     100% {
-        transform: translateX(1500px);
         opacity: 0.2;
     }
 }

@@ -1,0 +1,9 @@
+@media (min-width:500px) {
+    .viewcars {
+        margin: 0 auto;
+        padding: 10px;
+        max-width: 25rem;
+        text-align: left;
+    }
+
+}

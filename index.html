@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Info</title>
+    <meta name="description" content="Check Weather Temprature, humidity, and condition for your area.">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="large.css">
+
+    <!-- site logo link -->
+    <link rel="icon" href="image/weatherIcon.jpeg">
+</head>
+
+<body>
+
+    <div id="weather">
+        <input type="text" placeholder="Enter city">
+        <button id="btn" type="submit">searach</button>
+
+        <div class="card" style="display: none;">
+            <h2 class="cityName">No city Found</h2>
+            <p class="deg"></p>
+            <p class="humidity"></p>
+            <p class="decs"></p>
+            <!-- <p class="emoji">☀</p> -->
+            <img class="emoji" src="" alt="">
+            <p class="error">City Not Found....</p>
+        </div>
+    </div>
+
+    <div class="viewcars"><button><a href="car.html">View Cars</a></button></div>
+
+    <script src="weather.js"></script>
+</body>
+
+</html>

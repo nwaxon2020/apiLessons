@@ -125,6 +125,37 @@
     color: goldenrod;
 }
 
+@keyframes slide {
+
+    0% {
+        transform: translateX(-1200px);
+        opacity: 0.2;
+    }
+
+    50% {
+        transform: translateX(30px);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideout {
+
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(1300px);
+        opacity: 0.2;
+    }
+}
+
 @keyframes carslide {
 
     0% {
@@ -137,21 +168,6 @@
 
     100% {
         opacity: 1;
-    }
-}
-
-@keyframes carslideout {
-
-    0% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 0.8;
-    }
-
-    100% {
-        opacity: 0.2;
     }
 }
 

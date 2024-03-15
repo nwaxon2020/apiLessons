@@ -58,12 +58,12 @@ carMake.forEach((car, index) => {
 
                         carsInfoDisplay.style.display = "none";
 
-                        if (carInput.value === carz.model) {
-
-                            baseModel.innerHTML = `Model: <span>${carz.basemodel}</span>`;
+                        if (carInput.value == carz.model) {
+                            //carz.model.contain(carInput.value)
+                            baseModel.innerHTML = `Model: ${carMakeName} <span>${carz.basemodel}</span>`;
                             model.innerHTML = `Model No: <span>${carz.model}</span>`;
                             dateMF.innerHTML = `Year: <span>${carz.year}</span>`;
-                            engine.innerHTML = `Cylender: <span>${carz.cylinders}</span>`;
+                            engine.innerHTML = `Cylender: <span>${carz.cylinders}</span> Avt: <span>${carz.atvtype}</span>`;
                             gear.innerHTML = `Drive-type: <span>${carz.trany}</span>`;
                             drive.innerHTML = `Wheel-Drive: <span>${carz.drive}</span>`;
                         }

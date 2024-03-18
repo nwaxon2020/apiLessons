@@ -6,6 +6,10 @@ const carInput = document.getElementById("carInput");
 const carSearchBtn = document.getElementById("btnCar");
 let carsInfoDisplay = document.querySelector(".carsss");
 
+// Adding a new element to the cardisplay class.
+const fuelType = document.createElement("h4");
+carsInfoDisplay.appendChild(fuelType);
+
 const baseModel = document.getElementById("base-model");
 const model = document.getElementById("model");
 const dateMF = document.getElementById("date-manufactured");
@@ -58,14 +62,16 @@ carMake.forEach((car, index) => {
 
                         carsInfoDisplay.style.display = "none";
 
-                        if (carInput.value == carz.model) {
-                            //carz.model.contain(carInput.value)
+                        if (carz.model.includes(carInput.value)) {
+                            //
                             baseModel.innerHTML = `Model: ${carMakeName} <span>${carz.basemodel}</span>`;
                             model.innerHTML = `Model No: <span>${carz.model}</span>`;
                             dateMF.innerHTML = `Year: <span>${carz.year}</span>`;
                             engine.innerHTML = `Cylender: <span>${carz.cylinders}</span> Avt: <span>${carz.atvtype}</span>`;
                             gear.innerHTML = `Drive-type: <span>${carz.trany}</span>`;
                             drive.innerHTML = `Wheel-Drive: <span>${carz.drive}</span>`;
+                            fuelType.innerHTML = `Fuel-type: <span>${carz.fueltype1}</span>`
+
                         }
 
                     })

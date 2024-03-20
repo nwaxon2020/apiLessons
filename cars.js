@@ -62,7 +62,7 @@ carMake.forEach((car, index) => {
 
                         carsInfoDisplay.style.display = "none";
 
-                        if (carz.model.includes(carInput.value)) {
+                        if (carz.model.toLowerCase().includes(carInput.value.toLowerCase())) {
                             //
                             baseModel.innerHTML = `Model: ${carMakeName} <span>${carz.basemodel}</span>`;
                             model.innerHTML = `Model No: <span>${carz.model}</span>`;
